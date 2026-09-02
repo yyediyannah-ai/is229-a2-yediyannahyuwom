@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Enrol | BrightPath Learning Centre</title>
+  <meta name="description" content="Contact BrightPath Learning Centre or enrol your child in a tutoring programme.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>BrightPath Learning Centre</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Enrolment Form</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="parentname">Parent/Guardian full name</label><br>
+          <input type="text" id="parentname" name="parentname" required minlength="2">
+        </div>
+        <div>
+          <label for="studentname">Student full name</label><br>
+          <input type="text" id="studentname" name="studentname" required minlength="2">
+        </div>
+        <div>
+          <label for="email">Email address</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone number</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9+ ]{7,15}" required>
+        </div>
+        <div>
+          <label for="programme">Programme of interest</label><br>
+          <select id="programme" name="programme" required>
+            <option value="">-- Select a programme --</option>
+            <option value="primary">Primary Maths &amp; English</option>
+            <option value="secondary">Secondary Science &amp; Maths</option>
+            <option value="intensive">Exam Intensive</option>
+          </select>
+        </div>
+        <div>
+          <label for="startdate">Preferred start date</label><br>
+          <input type="date" id="startdate" name="startdate">
+        </div>
+        <div>
+          <label for="message">Additional message</label><br>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit">Submit Enrolment</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Visit Us</h2>
+      <p>123 Learning Street, Lae, Morobe Province. Open Monday–Saturday, 2pm–6pm.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BrightPath Learning Centre. All rights reserved.</p>
+  </footer>
+</body>
+</html>
