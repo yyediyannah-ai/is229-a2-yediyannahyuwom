@@ -42,11 +42,11 @@ https://github.com/yyediyannah-ai/is229-a2-yediyannahyuwom
 
 \## Validation
 
-All pages passed W3C Markup Validation with no errors. (Add explanation here if any warning was unavoidable.)
+All 5 pages (index.html, about.html, programmes.html, events.html, contact.html) were tested using the W3C Markup Validator (https://validator.w3.org/nu/) on their live GitHub Pages URLs on 3 September 2026. All pages passed with no errors or warnings.
 
 
 
 \## AI Use Declaration
 
-\[Be specific and honest about any AI assistance you used, or write "No AI assistance used."]
+I used Claude ai to help me with the step-by-step instructions for the site structure, HTML and CSS code in note pad. Also in instruction to use cmd to push the commit to GitHub.
 
