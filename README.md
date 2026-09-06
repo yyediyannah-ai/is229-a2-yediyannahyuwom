@@ -48,5 +48,5 @@ All 5 pages (index.html, about.html, programmes.html, events.html, contact.html)
 
 \## AI Use Declaration
 
-I used Claude ai to help me with the step-by-step instructions for the site structure, HTML and CSS code in note pad. Also in instruction to use cmd to push the commit to GitHub.
+I used Claude (AI) to guide me through the site structure, and to help generate the HTML and CSS code, which I entered and edited in Notepad. I also used it for step-by-step instructions on using cmd and Git to commit and push my work to GitHub.
 
