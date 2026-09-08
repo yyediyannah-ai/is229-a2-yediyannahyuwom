@@ -46,7 +46,13 @@ All 5 pages (index.html, about.html, programmes.html, events.html, contact.html)
 
 
 
+\## Form Submission Note
+
+The enrolment form on contact.html is built with correct HTML5 structure, labelled fields, appropriate input types, and validation attributes (required, minlength, pattern). It does not actually submit data anywhere, since GitHub Pages is a static host with no backend server to receive form submissions. Attempting to submit will show a "405 Not Allowed" page, which is expected behaviour for a static site and outside the scope of this assessment. Client-side HTML5 validation (e.g. blocking empty required fields or invalid email/phone formats) works correctly before this occurs.
+
+
+
 \## AI Use Declaration
 
-I used Claude (AI) to guide me through the site structure, and to help generate the HTML and CSS code, which I entered and edited in Notepad. I also used it for step-by-step instructions on using cmd and Git to commit and push my work to GitHub.
+I used Claude (AI) to guide me through the site structure and to generate HTML and CSS code. Most of this code was pasted into Notepad, with some sections typed out directly, then edited and adjusted by me. I also used AI for step-by-step instructions on using cmd and Git to commit and push my work to GitHub. Throughout the project, I watched YouTube videos and reviewed my lecture notes to properly understand the HTML elements, form validation attributes, and semantic structure I had used, so I could explain and account for my own code.
 
