@@ -3,9 +3,20 @@ body {
   line-height: 1.5;
   margin: 0;
   color: #222;
+  background-color: #ffffff;
 }
 
-header, main, footer {
+header {
+  background-color: #0d7377;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+main, footer {
   padding: 1rem 2rem;
 }
 
@@ -19,8 +30,20 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #0a4d8c;
+  color: #ffffff;
   font-weight: bold;
+}
+
+nav a:hover {
+  color: #f4a300;
+}
+
+h2 {
+  color: #0d7377;
+}
+
+h3 {
+  color: #f4a300;
 }
 
 table {
@@ -29,7 +52,14 @@ table {
   margin-top: 1rem;
 }
 
-th, td {
+th {
+  background-color: #0d7377;
+  color: #ffffff;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+td {
   border: 1px solid #ccc;
   padding: 0.6rem;
   text-align: left;
@@ -44,7 +74,17 @@ form div {
   margin-bottom: 1rem;
 }
 
+button {
+  background-color: #f4a300;
+  color: #222;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 footer {
-  background: #f2f2f2;
+  background-color: #0d7377;
+  color: #ffffff;
   text-align: center;
 }
