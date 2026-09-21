@@ -5,25 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events &amp; Gallery | BrightPath Learning Centre</title>
   <meta name="description" content="Photos and updates from BrightPath Learning Centre's classes and events.">
-  <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+ <header class="nav">
     <h1>BrightPath Learning Centre</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programmes.html">Programmes</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle nav__checkbox">
+    <label for="nav-toggle" class="nav__label">Menu</label>
+    <nav aria-label="Main navigation" class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section>
+  <section>
   <h2>Gallery</h2>
+  <div class="card-grid">
   <figure>
     <img src="images/newclassroom.jpg" alt="Students sitting at desks in a classroom facing a chalkboard" width="800" height="600">
     <figcaption>A typical classroom session at BrightPath.</figcaption>
@@ -36,12 +38,12 @@
     <img src="images/newbooks.jpg" alt="Two students reading books together in front of a bookshelf" width="800" height="600">
     <figcaption>Encouraging a love of reading alongside academics.</figcaption>
   </figure>
-  <figure>
+    <figure>
     <img src="images/newgraduation.jpg" alt="Rows of empty seats in an auditorium set up for a graduation ceremony" width="800" height="600">
     <figcaption>Preparing for our end-of-year graduation ceremony.</figcaption>
   </figure>
+  </div>
 </section>
-
     <section>
       <h2>Upcoming Events</h2>
       <article>
