@@ -1,0 +1,230 @@
+/* =========================================================
+   BrightPath Learning Centre — A3 Base Stylesheet
+   Design system: colours, typography, spacing, reset
+   ========================================================= */
+
+/* ---------- 1. CSS Custom Properties (Design Tokens) ---------- */
+:root {
+  /* Colour system */
+  --color-primary: #1d6f8c;       /* teal-blue — trust, education */
+  --color-primary-dark: #144f63;
+  --color-secondary: #f2a541;     /* warm accent for CTAs */
+  --color-secondary-dark: #d3861f;
+  --color-text: #212529;
+  --color-text-muted: #5a6169;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f8f9;
+  --color-border: #e0e4e6;
+  --color-success: #2e8b57;
+  --color-error: #c0392b;
+  --color-focus: #ffbf47;         /* visible focus ring colour */
+
+  /* Typography */
+  --font-heading: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-h1: clamp(1.9rem, 4vw + 1rem, 3rem);
+  --fs-h2: clamp(1.5rem, 3vw + 0.5rem, 2.25rem);
+  --fs-h3: clamp(1.15rem, 2vw + 0.5rem, 1.5rem);
+  --lh-body: 1.6;
+  --lh-heading: 1.25;
+
+  /* Spacing scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --transition: 0.2s ease-in-out;
+
+  /* Breakpoints (for reference — media queries can't read vars) */
+  /* mobile: 0–479px | tablet: 480–767px | small desktop: 768–1023px | desktop: 1024px+ */
+}
+
+/* ---------- 2. Reset / Normalise ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: var(--lh-heading);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+p { margin-bottom: var(--space-sm); }
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover { color: var(--color-primary-dark); }
+
+ul, ol { list-style: none; }
+
+/* ---------- 3. Accessibility: visible focus states ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---------- 4. Layout helpers ---------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-sm);
+}
+
+.flex { display: flex; gap: var(--space-sm); }
+.flex-wrap { flex-wrap: wrap; }
+.flex-center { align-items: center; justify-content: center; }
+.flex-between { align-items: center; justify-content: space-between; }
+.flex-column { flex-direction: column; }
+
+.grid { display: grid; gap: var(--space-md); }
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+/* ---------- 5. Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background-color: var(--color-secondary);
+  color: #1a1a1a;
+}
+.btn-primary:hover { background-color: var(--color-secondary-dark); }
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* ---------- 6. Cards / Panels ---------- */
+.card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+/* ---------- 7. Forms ---------- */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--space-2xs);
+}
+
+input, textarea, select {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  padding: var(--space-xs);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ---------- 8. Navigation (mobile-first, checkbox toggle) ---------- */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav__links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--space-xs);
+}
+
+.nav__toggle:checked ~ .nav__links { display: flex; }
+.nav__checkbox { display: none; }
+.nav__label { cursor: pointer; font-size: 1.5rem; }
+
+/* ---------- 9. Media queries: mobile-first breakpoints ---------- */
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .nav__label { display: none; }
+
+  .grid-auto { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+  .grid-auto { grid-template-columns: repeat(3, 1fr); }
+  .flex-desktop-row { flex-direction: row; }
+}

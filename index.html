@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | BrightPath Learning Centre</title>
   <meta name="description" content="BrightPath Learning Centre offers after-school tutoring in maths, science and English for primary and secondary students.">
-  <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+ <header class="nav">
     <h1>BrightPath Learning Centre</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programmes.html">Programmes</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle nav__checkbox">
+    <label for="nav-toggle" class="nav__label">Menu</label>
+    <nav aria-label="Main navigation" class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -27,6 +28,7 @@
       <p>BrightPath Learning Centre helps primary and secondary students build confidence in maths, science and English through small-group tutoring and personalised study plans. We started in a single rented classroom in 2019 with six students, and have since grown into a trusted after-school option for families across the local community, without ever losing the small-group, personal approach we started with.</p>
     </section>
 
+<div class="two-col">
     <section>
       <h2>Why Families Choose Us</h2>
       <ul>
@@ -36,10 +38,12 @@
         <li>Regular progress reports for parents</li>
       </ul>
     </section>
+
  <aside>
       <h2>Quick Facts</h2>
       <p>Open Monday to Saturday, 2pm–6pm. Sessions run in 1-hour blocks. New students can book a free trial lesson via our <a href="contact.html">enrolment page</a>.</p>
     </aside>
+</div>
   </main>
 
   <footer>
