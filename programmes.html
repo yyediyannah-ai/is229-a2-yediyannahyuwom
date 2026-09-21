@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programmes | BrightPath Learning Centre</title>
   <meta name="description" content="View BrightPath's tutoring programmes, subjects and pricing.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+<header class="nav">
     <h1>BrightPath Learning Centre</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programmes.html">Programmes</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle nav__checkbox">
+    <label for="nav-toggle" class="nav__label">Menu</label>
+    <nav aria-label="Main navigation" class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -38,36 +39,24 @@
 </article>
     </section>
 
-    <section>
-      <h2>Pricing</h2>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Programme</th>
-            <th scope="col">Session length</th>
-            <th scope="col">Price per session</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Primary Maths &amp; English</td>
-            <td>1 hour</td>
-            <td>K30</td>
-          </tr>
-          <tr>
-            <td>Secondary Science &amp; Maths</td>
-            <td>1 hour</td>
-            <td>K40</td>
-          </tr>
-          <tr>
-            <td>Exam Intensive (4 weeks)</td>
-            <td>8 sessions</td>
-            <td>K280</td>
-          </tr>
-        </tbody>
-      </table>
+<section>
+      <h2>Our Programmes</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Primary Maths &amp; English (Ages 7–12)</h3>
+          <p>Foundational skills in reading, writing and arithmetic through small-group sessions.</p>
+        </article>
+        <article class="card">
+          <h3>Secondary Science &amp; Maths (Ages 13–17)</h3>
+          <p>Exam-focused tutoring covering the national curriculum, with past-paper practice.</p>
+        </article>
+        <article class="card">
+          <h3>Exam Intensive (4-week course)</h3>
+          <p>A short, focused course in the weeks before major exams, using past papers and timed practice tests to build both knowledge and confidence under exam conditions. Places are limited to keep group sizes small during this busy period.</p>
+        </article>
+      </div>
     </section>
-  </main>
+      </main>
 
   <footer>
     <p>&copy; 2026 BrightPath Learning Centre. All rights reserved.</p>
