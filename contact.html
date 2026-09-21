@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact &amp; Enrol | BrightPath Learning Centre</title>
   <meta name="description" content="Contact BrightPath Learning Centre or enrol your child in a tutoring programme.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+<header class="nav">
     <h1>BrightPath Learning Centre</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programmes.html">Programmes</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle nav__checkbox">
+    <label for="nav-toggle" class="nav__label">Menu</label>
+    <nav aria-label="Main navigation" class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
+ <main>
+    <div class="two-col">
     <section>
       <h2>Enrolment Form</h2>
       <form action="#" method="post">
@@ -58,14 +60,15 @@
           <label for="message">Additional message</label><br>
           <textarea id="message" name="message" rows="5"></textarea>
         </div>
-        <button type="submit">Submit Enrolment</button>
+       <button type="submit" class="btn">Submit Enrolment</button>
       </form>
     </section>
 
-    <section>
+   <section>
       <h2>Visit Us</h2>
       <p>123 Learning Street, Lae, Morobe Province. Open Monday–Saturday, 2pm–6pm.</p>
     </section>
+    </div>
   </main>
 
   <footer>
