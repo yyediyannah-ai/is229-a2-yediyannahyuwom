@@ -194,8 +194,13 @@ input, textarea, select {
   align-items: center;
   justify-content: space-between;
   padding: var(--space-sm);
-  background-color: var(--color-bg);
+  background-color: #0d7377;
+  color: #ffffff;
   border-bottom: 1px solid var(--color-border);
+}
+
+.nav h1 {
+  color: #ffffff;
 }
 
 .nav__links {
