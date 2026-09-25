@@ -6,36 +6,8 @@ body {
   background-color: #ffffff;
 }
 
-header {
-  background-color: #0d7377;
-  color: #ffffff;
-  padding: 1rem 2rem;
-}
-
-header h1 {
-  color: #ffffff;
-}
-
 main, footer {
   padding: 1rem 2rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #f4a300;
 }
 
 h2 {
@@ -87,18 +59,6 @@ footer {
   background-color: #0d7377;
   color: #ffffff;
   text-align: center;
-}
-
-/* ===== RESPONSIVE NAVIGATION ===== */
-nav ul {
-  flex-wrap: wrap;
-}
-
-@media (max-width: 767px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
 }
 
 /* ===== FLEXBOX: two-column sections side by side on desktop ===== */
