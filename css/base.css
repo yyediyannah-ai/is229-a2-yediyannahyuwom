@@ -46,9 +46,6 @@
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
   --transition: 0.2s ease-in-out;
-
-  /* Breakpoints (for reference — media queries can't read vars) */
-  /* mobile: 0–479px | tablet: 480–767px | small desktop: 768–1023px | desktop: 1024px+ */
 }
 
 /* ---------- 2. Reset / Normalise ---------- */
@@ -168,6 +165,12 @@ select:focus-visible {
   box-shadow: var(--shadow-hover);
   transform: translateY(-4px);
 }
+.card h3 {
+  color: #d3861f;
+}
+.card-grid .card:last-child {
+  border: 2px solid var(--color-secondary);
+}
 
 /* ---------- 7. Forms ---------- */
 label {
@@ -188,7 +191,7 @@ input, textarea, select {
   color: var(--color-text);
 }
 
-/* ---------- 8. Navigation (mobile-first, checkbox toggle) ---------- */
+/* ---------- 8. Navigation ---------- */
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -212,6 +215,18 @@ input, textarea, select {
   display: none;
 }
 
+.nav__links a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+  .nav__links {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .nav__links {
   display: flex;
   flex-wrap: wrap;
@@ -223,6 +238,17 @@ input, textarea, select {
   .nav__links {
     width: auto;
   }
+}
+
+/* ---------- 9. Media queries: mobile-first breakpoints ---------- */
+
+@media (min-width: 768px) {
+  .grid-auto { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grid-auto { grid-template-columns: repeat(3, 1fr); }
+  .flex-desktop-row { flex-direction: row; }
 }
 
 /* ---------- 9. Media queries: mobile-first breakpoints ---------- */
