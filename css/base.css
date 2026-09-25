@@ -61,8 +61,8 @@ body {
   font-family: var(--font-body);
   font-size: var(--fs-base);
   line-height: var(--lh-body);
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: #1a1a1a;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -86,11 +86,11 @@ h3 { font-size: var(--fs-h3); }
 p { margin-bottom: var(--space-sm); }
 
 a {
-  color: var(--color-primary);
-  text-decoration: none;
+  color: var(--color-primary-dark);
+  text-decoration: underline;
   transition: color var(--transition);
 }
-a:hover { color: var(--color-primary-dark); }
+a:hover { color: #0d3f52; }
 
 ul, ol { list-style: none; }
 
@@ -166,7 +166,7 @@ select:focus-visible {
   transform: translateY(-4px);
 }
 .card h3 {
-  color: #d3861f;
+  color: #a8620f;
 }
 .card-grid .card:last-child {
   border: 2px solid var(--color-secondary);
@@ -207,6 +207,12 @@ input, textarea, select {
 .nav h1 {
   color: #ffffff;
   font-size: 1.3rem;
+}
+
+.nav__links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .nav__toggle,
