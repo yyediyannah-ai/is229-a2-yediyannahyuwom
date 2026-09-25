@@ -215,6 +215,10 @@ input, textarea, select {
   display: none;
 }
 
+.nav__links a {
+  color: #ffffff;
+}
+
 .nav__links a:hover {
   text-decoration: underline;
   opacity: 0.85;
