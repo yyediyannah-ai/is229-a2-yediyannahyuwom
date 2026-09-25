@@ -232,16 +232,22 @@ input, textarea, select {
 
 @media (max-width: 767px) {
   .nav__links {
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
   }
 }
 
 .nav__links {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
+  flex-wrap: nowrap;
+  gap: var(--space-md);
   width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.nav__links a {
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
